@@ -1,6 +1,6 @@
 
 {
-    "name": "room0",
+    "name": "rm_grass_parent",
     "id": "4c7ff0f7-aa7d-48cd-9324-58cee4f1d3b7",
     "creationCodeFile": "",
     "inheritCode": false,

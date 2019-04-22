@@ -13,4 +13,9 @@ if (gamepad_isconnected(0)) {
 	lKey = gamepad_button_check(0, gp_padl);
 	dKey = gamepad_button_check(0, gp_padd);
 	uKey = gamepad_button_check(0, gp_padu);
+	
+	xaxis = max(gamepad_axis_value(0, gp_axislh),
+	gamepad_axis_value(0, gpaxisrh), rKey - lKey, 0);
+	yaxis = max(gamepad_axis_value(0, gp_axislh),
+	gamepad_axis_value(0, gp_axisrh), dKey - uKey, 0);
 }
